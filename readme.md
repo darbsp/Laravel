@@ -1,1 +1,1 @@
-This is the README
+This is the first version controlled project using Git.
