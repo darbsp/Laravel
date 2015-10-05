@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Staff;
 
 /**
  * Class pagesController
@@ -17,7 +18,12 @@ class pagesController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $staff = Staff::All();
+
+        return view('login', compact('staff'));
+
+        // This returns JSON on the specified route.
+     //   return $staff;
     }
 
 }

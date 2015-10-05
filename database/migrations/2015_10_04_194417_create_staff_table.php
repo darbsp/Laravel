@@ -25,6 +25,7 @@ class CreateStaffTable extends Migration
             $table->binary('image');
             $table->rememberToken();
             $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 

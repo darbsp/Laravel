@@ -38,7 +38,11 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Lewis 5</div>
+                <div class="title">Lewis</div>
+
+                @foreach ($staff as $staffMember)
+                   <h2> {{ $staffMember->forename }} </h2>
+                @endforeach
             </div>
         </div>
     </body>
